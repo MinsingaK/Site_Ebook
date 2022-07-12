@@ -150,31 +150,119 @@ body{
 }
 
 .grid-container{
+    display: flex;
+    background-color: black;
+    /* background-color: aqua; */
+    /* width: 100vw;
+    height: 100vh;
+    /justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 25px;
     display: flex;
     width: 90vw;
-    height: 100vh;
+    height: 100vh; */
 }
 
-.grid-container #left-part{
+#left-part{
+    background-color: rgb(242, 242, 242);
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 40%;
+}
+
+.grid-container #left-part-content{
+    flex-wrap: wrap;
+    display: flex;
+    width: 60vw;
+    margin-left: 25px;
+    justify-content: space-between;
+    /* margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border-radius: 30px;
     margin-bottom: 20px;
     flex: 0 0 60%;
     background-color: rgb(242, 242, 242);
+    width: 60vw;
+    height: 100vh; */
 }
-.grid-container #right-part{
+
+.grid-container #left-part h3{
+    width: 100%;
+    margin-top: 35px;
+    margin-left: 16%;
+}
+
+.grid-container #left-part .title2{
+    width: 100%;
+    margin-left: 35px;
+    margin-bottom: 5%;
+}
+
+.grid-container #left-part .pro{
+    width: 25px;
+    height: 40px;
+    min-width: 250px;
+    min-height: 200px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 20px;
+    transition: .3s ease;
+    cursor: pointer;
+    margin: 10px;
+    background-color: white;
+}
+
+/* .pro-im{
+    background-image: url("./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+} */
+
+.grid-container #left-part .pro:hover{
+    box-shadow: 20px 20px 20px rgb(0, 0, 0, 0.06);
+}
+
+.grid-container #left-part .pro .des{
+    margin-top: 65px;
+    text-align: start;
+    padding: 20px ;
+    position: relative;
+}
+
+.grid-container #left-part .pro .des h4{
+    height: 0;
+}
+
+.grid-container #left-part .pro .des i{
+    color: rgb(31, 106, 252);
+}
+
+.grid-container #left-part .pro .des .first{
+    color: rgb(219, 219, 219);
+}
+
+#right-part{
+    display: flex;
     border-radius: 30px;
-    margin-left: 60px;
+    /* margin-left: 60px;
     margin-bottom: 20px;
-    margin-right: 10px;
-    flex: 0 0 35%;
+    margin-right: 10px; */
+    flex: 0 0 40%;
     background-color: rgb(242, 242, 242);
 }
 
+.title3{
+    padding-top: 20px;
+}
+
 .grid-container2{
-    margin-top: 25px;
     display: flex;
-    width: 90vw;
     height: 80vh;
 }
 
@@ -186,7 +274,6 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     flex: 0 0 22.8%;
-    background-color: rgb(242, 242, 242);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -196,7 +283,6 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: red;
     padding: 5px 20px;
     font-size: 600;
     font-size: 20px;
@@ -208,7 +294,6 @@ body{
     margin-bottom: 20px;
     margin-left: 35px;
     flex: 0 0 23%;
-    background-color: rgb(242, 242, 242);
     border-radius: 30px;
 }
 
@@ -218,7 +303,6 @@ body{
     background-position: center;margin-bottom: 25px;
     height: 40vh;
     border-radius: 30px;
-    background-color: black;
 }
 
 .grid-container2 .aside2 .bottom1{
@@ -228,7 +312,6 @@ body{
     margin-top: 33px;
     height: 29vh;
     border-radius: 30px;
-    background-color: red;
 }
 
 .grid-container2 .aside3{
@@ -239,7 +322,6 @@ body{
     margin-bottom: 20px;
     margin-left: 35px;
     flex: 0 0 23%;
-    background-color: rgb(242, 242, 242);
     border-radius: 30px;
 }
 
@@ -248,7 +330,6 @@ body{
     margin-bottom: 20px;
     margin-left: 29px;
     flex: 0 0 23%;
-    background-color: rgb(242, 242, 242);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -261,7 +342,6 @@ body{
     margin-bottom: 25px;
     height: 40vh;
     border-radius: 30px;
-    background-color: black;
 }
 
 .grid-container2 .aside4 .bottom2{
@@ -270,11 +350,9 @@ body{
     background-position: center;
     height: 40vh;
     border-radius: 30px;
-    background-color: red;
 }
 
 footer{
-    width: 100vw;
     display: flex;
     background-color: rgb(242, 242, 242) ;
     justify-content:space-between;
