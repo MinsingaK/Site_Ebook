@@ -5,6 +5,10 @@
     font-family: "Muli", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }
@@ -95,26 +99,182 @@ body{
     margin-top: 30px;
 }
 
+.ras2 .row{
+    display: flex;
+    margin-left: 60px;
+    justify-content: space-between;
+    width: 70vw;
+}
+
 .elt{
     display: flex;
     border: 1px solid rgb(198, 198, 198);
     border-radius: 50px;
+    width: 200px;
+    height: 45px;
+    align-items: center;
 }
 
 .ras2 .elt i{
     background-color: rgb(223, 236, 255);
     color: rgb(0, 101, 252);
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 43px;
     text-align: center;
     padding-top: 10px;
 }
 
+.ras2 .row p{
+    padding-left: 15px;
+    font-size: 0.9rem;
+}
+
+.col2{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.col2 p{
+    padding-left: 20px;
+}
+
+.col2 i{
+    border-radius: 50px;
+    border: 1px solid rgb(198, 198, 198);
+    width: 40px;
+    height: 43px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.grid-container{
+    margin-top: 25px;
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+}
+
+.grid-container #left-part{
+    border-radius: 30px;
+    margin-bottom: 20px;
+    flex: 0 0 60%;
+    background-color: rgb(242, 242, 242);
+}
+.grid-container #right-part{
+    border-radius: 30px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    flex: 0 0 35%;
+    background-color: rgb(242, 242, 242);
+}
+
+.grid-container2{
+    margin-top: 25px;
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+}
+
+.grid-container2 .aside1{
+    background: url("./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex: 0 0 22.8%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container2 .aside1 p{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    padding: 5px 20px;
+    font-size: 600;
+    font-size: 20px;
+}
+
+.grid-container2 .aside2{
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    flex: 0 0 23%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 30px;
+}
+
+.grid-container2 .aside2 .top1{
+    background: url("./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;margin-bottom: 25px;
+    height: 40vh;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.grid-container2 .aside2 .bottom1{
+    background: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 33px;
+    height: 29vh;
+    border-radius: 30px;
+    background-color: red;
+}
+
+.grid-container2 .aside3{
+    background: url("./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    flex: 0 0 23%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 30px;
+}
+
+.grid-container2 .aside4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 29px;
+    flex: 0 0 23%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container2 .aside4 .top2{
+    background: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+    height: 40vh;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.grid-container2 .aside4 .bottom2{
+    background: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    border-radius: 30px;
+    background-color: red;
+}
+
 footer{
     width: 100vw;
-    bottom: 0;
-    position: absolute;
     display: flex;
     background-color: rgb(242, 242, 242) ;
     justify-content:space-between;
