@@ -419,8 +419,9 @@ body{
 footer{
     display: flex;
     background-color: rgb(242, 242, 242) ;
-    justify-content:space-between;
+    justify-content:flex-start;
     margin-top: 30px;
+    height: 30vh;
 }
 
 footer ul{
@@ -438,6 +439,30 @@ footer ul a:hover{
     color: rgb(0, 101, 252);
 }
 
-footer #child{
-    padding-right: 20%;
+footer #child1{
+    /* background-color: blueviolet; */
+    display: flex;
+}
+
+footer #child2{
+    /* background-color: yellowgreen; */
+    display: flex;
+    margin-left: 15%;
+}
+
+footer #child3{
+    /* background-color: crimson; */
+    display: flex;
+    margin-left: 16%;
+}
+
+footer h4{
+    margin: 0;
+    /* background-color: #fff; */
+}
+
+footer #child1 div, footer #child2 div, footer #child3 div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
 }
